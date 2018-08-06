@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{stuInfo.data}}" wx:key="*this">
+    {{item}}
+  </view>
+
+</view>

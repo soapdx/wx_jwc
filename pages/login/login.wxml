@@ -1,0 +1,15 @@
+<!--login.wxml-->
+<view class="container">
+  <image style="width: 150px; height: 150px;" src="/image/nau.jpg"></image>
+
+  <input placeholder="学号" bindinput='id'/>
+  
+  <input password placeholder="密码" bindinput='pwd'/>
+
+  <button type="primary" bindtap="btnClick"> 登录 </button>
+
+  <view wx:for="{{stuInfo}}" wx:key="*this">
+    {{item}}
+  </view>
+
+</view>
