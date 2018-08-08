@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+    <view class="weui-flex">
+            <navigator url="../info/info" open-type="navigate" class="weui-flex__item"><view class="placeholder">个人信息</view></navigator>
+            <navigator url="../news/news" open-type="navigate" class="weui-flex__item"><view class="placeholder">学校新闻</view></navigator>
+    </view>

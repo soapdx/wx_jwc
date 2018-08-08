@@ -3,7 +3,6 @@ Page({
   data: {
     news:null,
   },
-
   onLoad: function (options) {
     var thispage = this;
     wx.request({
@@ -21,8 +20,13 @@ Page({
   
   },
 
-  onReachBottom: function () {
-  
-  },
+  jumpToDetail: function(event){
+    var id =null;
+    wx.navigateTo({
+      url: '../newsdetail/newsdetail?id={{id}}',
+    })
+  }
+
+
 
 })

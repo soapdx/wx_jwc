@@ -1,10 +1,10 @@
 {
   "pages": [
-    
+    "pages/index/index",
+    "pages/news/news",
     "pages/info/info",
     "pages/login/login",
-    "pages/news/news"
-  
+    "pages/newsdetail/newsdetail"
 
   ],
   "window": {

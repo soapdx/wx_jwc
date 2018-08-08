@@ -1,13 +1,18 @@
 <!--news.wxml-->
-
-
 <template name="msgTemp">
-<view>
-    <text>{{title}}</text>
-    <text>{{link}}</text>
-</view>
+  <navigator url="../newsdetail/newsdetail?type={{link}}">
+    <view class="weui-media-box__title ">{{title}}</view>
+    <text class="weui-media-box__desc">{{link}}</text>
+  </navigator>
 </template>
- 
-<view wx:for="{{news}}" wx:key="*this">
-    <template is="msgTemp" data="{{...item}}"/>
+<view class="weui-panel weui-panel_access">
+     <view class="weui-panel__bd" >
+
+        <view class="weui-media-box weui-media-box_text" wx:for="{{news}}" wx:key="*this">
+           <template is="msgTemp" data="{{...item}}"/>
+        </view>
+
+     </view>          
 </view>
+
+
