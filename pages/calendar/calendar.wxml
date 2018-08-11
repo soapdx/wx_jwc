@@ -1,0 +1,4 @@
+<view>
+<image mode="widthFix" style="width: 100%;" src="/image/c2.jpg"></image>
+<image mode="widthFix" style="width: 100%;" src="/image/c1.jpg"></image>
+</view>

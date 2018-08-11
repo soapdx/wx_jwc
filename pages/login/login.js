@@ -12,7 +12,7 @@ Page({
     app.getStudentInfo(this.data.id,this.data.pwd,function(data){
       thispage.setData({stuInfo:data})
       app.appData.userinfo = {data}
-      wx.redirectTo({ url: '../info/info', })
+      wx.navigateBack()
     });
     
     

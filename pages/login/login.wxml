@@ -8,8 +8,4 @@
 
   <button type="primary" bindtap="btnClick"> 登录 </button>
 
-  <view wx:for="{{stuInfo}}" wx:key="*this">
-    {{item}}
-  </view>
-
 </view>

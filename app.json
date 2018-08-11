@@ -4,8 +4,9 @@
     "pages/news/news",
     "pages/info/info",
     "pages/login/login",
-    "pages/newsdetail/newsdetail"
-
+    "pages/newsdetail/newsdetail",
+    "pages/score/score",
+    "pages/calendar/calendar"
   ],
   "window": {
     "backgroundTextStyle": "light",

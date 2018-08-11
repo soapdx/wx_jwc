@@ -1,5 +1,24 @@
 <!--pages/index/index.wxml-->
-    <view class="weui-flex">
-            <navigator url="../info/info" open-type="navigate" class="weui-flex__item"><view class="placeholder">个人信息</view></navigator>
-            <navigator url="../news/news" open-type="navigate" class="weui-flex__item"><view class="placeholder">学校新闻</view></navigator>
-    </view>
+<view class="page__bd page__bd_spacing">
+  <view class="weui-flex">
+
+    <navigator url="../info/info" open-type="navigate" class="weui-flex__item">
+      <view class="placeholder">个人信息</view>
+    </navigator>
+    <navigator url="../news/news" open-type="navigate" class="weui-flex__item">
+      <view class="placeholder">学校新闻</view>
+    </navigator>
+
+  </view>
+
+  <view class="weui-flex">
+
+    <navigator url="../score/score" open-type="navigate" class="weui-flex__item">
+      <view class="placeholder">成绩查询</view>
+    </navigator>
+    <navigator url="../calendar/calendar" open-type="navigate" class="weui-flex__item">
+      <view class="placeholder">校历查询</view>
+    </navigator>
+  </view>
+  
+</view>

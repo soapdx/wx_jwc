@@ -1,0 +1,16 @@
+<template name="msgTemp">
+  <view>
+    <view class="weui-media-box__title ">{{kcmc}}</view>
+    <text class="weui-media-box__desc">平时:{{ps}}  期中:{{qz}}  期末:{{qm}}  总评:{{zp}}</text>
+    <text class="weui-media-box__desc">学分:{{xf}}</text>
+  </view>
+</template>
+<view class="weui-panel weui-panel_access">
+     <view class="weui-panel__bd" >
+
+        <view class="weui-media-box weui-media-box_text" wx:for="{{score}}" wx:key="*this">
+           <template is="msgTemp" data="{{...item}}"/>
+        </view>
+
+     </view>          
+</view>

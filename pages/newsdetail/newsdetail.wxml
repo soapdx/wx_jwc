@@ -1,2 +1,18 @@
-<!--pages/newsdetail/newsdetail.wxml-->
-<web-view src="{{url1}}"></web-view>
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">{{title}}</view>
+    <view class="page__desc">{{date}}</view>
+  </view>
+
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__p">
+        <view class="wxParse">
+          <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

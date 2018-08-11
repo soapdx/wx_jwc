@@ -1,8 +1,8 @@
+
 <!--news.wxml-->
 <template name="msgTemp">
   <navigator url="../newsdetail/newsdetail?type={{link}}">
     <view class="weui-media-box__title ">{{title}}</view>
-    <text class="weui-media-box__desc">{{link}}</text>
   </navigator>
 </template>
 <view class="weui-panel weui-panel_access">
